@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:ORCL
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: system
+    password: 123456
+  thymeleaf:
+    cache: false
+    prefix: classpath:/public/
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML5
+  resources:
+    static-locations: classpath:/templates/
+
+mybatis:
+  mapper-locations: classpath:cn/lifecycle/mapper/*.xml
+
+
